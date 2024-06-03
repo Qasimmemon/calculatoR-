@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" class="calculator-screen" disabled>
+        <div class="calculator-keys" id="get">
+            <button class="btn btn-clear" onclick="clearResult()">C</button>
+            <button class="btn" onclick="runFunction('1')">1</button>
+            <button class="btn" onclick="runFunction('2')">2</button>
+            <button class="btn btn-operator" onclick="runFunction('+')">+</button>
+            <button class="btn" onclick="runFunction('3')">3</button>
+            <button class="btn" onclick="runFunction('4')">4</button>
+            <button class="btn" onclick="runFunction('5')">5</button>
+            <button class="btn btn-operator" onclick="runFunction('-')">-</button>
+            <button class="btn" onclick="runFunction('6')">6</button>
+            <button class="btn" onclick="runFunction('7')">7</button>
+            <button class="btn" onclick="runFunction('8')">8</button>
+            <button class="btn btn-operator" onclick="runFunction('/')">/</button>
+            <button class="btn" onclick="runFunction('9')">9</button>
+            <button class="btn" onclick="runFunction('0')">0</button>
+            <button class="btn btn-operator" onclick="runFunction('*')">*</button>
+            <button class="btn btn-equal" onclick="runFunction('=')">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
